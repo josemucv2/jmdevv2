@@ -1,0 +1,11 @@
+.tech_container {
+  border: 1px solid white;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.icons_container {
+  overflow: auto;
+  height: calc(100vh - 175px);
+}

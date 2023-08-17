@@ -1,0 +1,10 @@
+.butto_container {
+  background: #25d366;
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  items-align: center;
+}

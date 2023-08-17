@@ -1,0 +1,12 @@
+.photo {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+  .photo {
+    width: 15%;
+    height: 15%;
+  }
+}

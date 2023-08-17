@@ -1,0 +1,24 @@
+.input_container {
+  border: 1px solid white;
+  background: transparent;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.imput_border_error {
+  border: 1px solid rgb(255, 71, 87);
+  border-radius: 8px;
+}
+
+.label {
+  padding: 5px 5px 5px 10px;
+}
+
+.error_message {
+  color: rgb(255, 71, 87);
+}

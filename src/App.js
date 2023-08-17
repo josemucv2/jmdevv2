@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
+import RouteView from "./router/routes";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import "./assets/style.css";
+import ParticlesComponent from "./components/Particles";
+import NavBarMobile from "./components/NabarMobile";
+import { useState } from "react";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 function App() {
+  const [viewMenu, setViewMenu] = useState(false);
+
+  const changeViewMenu = () => {
+    setViewMenu(!viewMenu);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="body_template">
+        <ParticlesComponent />
+        <ToastContainer />
+        <NavBar viewMenu={viewMenu} changeViewMenu={changeViewMenu} />
+        {viewMenu && (
+          <div className="menu-mobile-container">
+            <NavBarMobile setViewMenu={changeViewMenu} />
+          </div>
+        )}
+
+        {!viewMenu && (
+          <div className="router-view-container">
+            <RouteView />
+          </div>
+        )}
+
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
