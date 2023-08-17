@@ -32,6 +32,10 @@ function Contact() {
     const hasErrors = Object.values(submitErrors).some((err) => err !== "");
 
     if (!hasErrors) {
+      if (true) {
+        toast.error("No Disponible");
+        return;
+      }
       setLoader(true);
       const body = {
         from: initialState.email,

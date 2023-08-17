@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const sendEmail = (body) => {
-  return axios.post("https://send-email-api-eta.vercel.app/send-email", body);
+  return axios.post(`${process.env.REACT_APP_API}/send-email`, body);
 };
