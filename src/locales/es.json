@@ -30,5 +30,6 @@
     "placeHolderEmail": "Ingrese su correo electrónico",
     "placeHolderSubject": "Ingrese un asunto",
     "placeHolderMessage": "Ingrese el mensaje a enviar",
-    "requiredField": "Campo requerido"
+    "requiredField": "Campo requerido",
+    "september": "Septiembre"
 }

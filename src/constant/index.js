@@ -2,13 +2,12 @@ export const NUMBER_PHONE = "+584241449453";
 export const RRSS_INSTAGRAM = "https://www.instagram.com/soy_jm/";
 export const RRSS_LINKEDIN = "https://www.linkedin.com/in/josemartinez-developer/";
 
-export const CV = [
-  {
+export const CV = [{
     _id: 1,
     from: "juny",
     yearFrom: "2023",
-    to: "present",
-    yearTo: "",
+    to: "september",
+    yearTo: "2023",
     company: "Feedback Software",
     jobTitle: "frontEndDeveloper",
     description: "experienceFour",
@@ -45,8 +44,7 @@ export const CV = [
   },
 ];
 
-export const technologies = [
-  {
+export const technologies = [{
     id: 1,
     label: "Javascript",
     icon: "Javascript",
