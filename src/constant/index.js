@@ -1,8 +1,20 @@
 export const NUMBER_PHONE = "+584241449453";
 export const RRSS_INSTAGRAM = "https://www.instagram.com/soy_jm/";
-export const RRSS_LINKEDIN = "https://www.linkedin.com/in/josemartinez-developer/";
+export const RRSS_LINKEDIN =
+  "https://www.linkedin.com/in/josemartinez-developer/";
 
-export const CV = [{
+export const CV = [
+  {
+    _id: 3,
+    from: "november",
+    yearFrom: "2021",
+    to: "present",
+    yearTo: "",
+    company: "Bolsa Descentralizada de Valores de Venezuela",
+    jobTitle: "softwareDeveloper",
+    description: "experienceTwo",
+  },
+  {
     _id: 1,
     from: "juny",
     yearFrom: "2023",
@@ -23,16 +35,6 @@ export const CV = [{
     description: "experienceThree",
   },
   {
-    _id: 3,
-    from: "november",
-    yearFrom: "2021",
-    to: "april",
-    yearTo: "2022",
-    company: "Bolsa Descentralizada de Valores de Venezuela",
-    jobTitle: "softwareDeveloper",
-    description: "experienceTwo",
-  },
-  {
     _id: 4,
     from: "frebuary",
     yearFrom: "2020",
@@ -44,7 +46,8 @@ export const CV = [{
   },
 ];
 
-export const technologies = [{
+export const technologies = [
+  {
     id: 1,
     label: "Javascript",
     icon: "Javascript",
