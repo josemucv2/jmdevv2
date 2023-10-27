@@ -23,8 +23,8 @@ function NavBar({ viewMenu, changeViewMenu }) {
         <ul className="md:flex space-x-10 hidden">
           {sideBarElement.map((element, index) => (
             <li key={index} className="cursor-pointer hover:underline">
-              <Link to={element.route} title={`Ir a ${element.name}`}>
-                {element.name}
+              <Link to={element.route} title={`Ir a ${t(element.name)}`}>
+                {t(element.name)}
               </Link>
             </li>
           ))}
