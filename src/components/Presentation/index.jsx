@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
+import { Link } from "react-router-dom";
 import PhotoJose from "../../assets/img/Jose.png";
 import { useTranslation } from "react-i18next";
 import Button from "../Button";
@@ -15,25 +16,30 @@ function Presentation({ contact }) {
   };
   return (
     <div className="flex flex-col justify-center items-center space-y-10 ">
-      <img src={PhotoJose} className="z-20 rounded-full	" width={"250px"} />
+      <img
+        src={PhotoJose}
+        className="z-20 rounded-full	"
+        width={"250px"}
+        alt="Jose Martinez"
+      />
+
       <div className="flex flex-col justify-center items-center space-y-10  md:w-1/4 w-full">
         <div className="space-y-1 flex flex-col justify-center items-center">
-          <div className="font-semibold">{t("name")}</div>
-          <div>{t("proffesion")}</div>
+          <h2 className="font-semibold">{t("name")}</h2>
+          <p>{t("proffesion")}</p>
         </div>
+
         <div className="flex space-x-3 items-center">
-          <img
-            src={ig}
-            alt=""
-            className="mt-1 cursor-pointer"
-            onClick={() => goPage(RRSS_INSTAGRAM)}
-          />
-          <img
-            src={linkedin}
-            alt=""
-            onClick={() => goPage(RRSS_LINKEDIN)}
-            className="cursor-pointer"
-          />
+          <Link to={RRSS_INSTAGRAM}>
+            <img src={ig} alt="instagram" className="mt-1 cursor-pointer" />
+          </Link>
+          <Link to={RRSS_LINKEDIN}>
+            <img
+              src={linkedin}
+              alt="linkedin"
+              className="mt-1 cursor-pointer"
+            />
+          </Link>
         </div>
         <div
           className={`w-full px-5 lg:px-0 z-20 ${

@@ -3,9 +3,9 @@ import Presentation from "../../components/Presentation";
 
 function Home() {
   return (
-    <div>
+    <section>
       <Presentation />
-    </div>
+    </section>
   );
 }
 

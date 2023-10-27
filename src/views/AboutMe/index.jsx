@@ -12,7 +12,7 @@ function AboutMe() {
     setViewExperience(!viewExperience);
   };
   return (
-    <div className="h-full flex justify-between">
+    <section className="h-full flex justify-between">
       <div
         className={`h-full lg:w-1/2 w-full mt-5 p-2 ${
           viewExperience && "hidden lg:inline"
@@ -53,7 +53,7 @@ function AboutMe() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
 

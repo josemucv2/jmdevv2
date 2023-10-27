@@ -13,15 +13,15 @@ function NavBarMobile({ setViewMenu }) {
     setViewMenu();
   };
   return (
-    <div className={`${s.container_mobile_menu} p-10 space-y-5`}>
+    <ul className={`${s.container_mobile_menu} p-10 space-y-5`}>
       {sideBarElement.map((element, index) => {
         return (
-          <div key={index} onClick={() => changeRoute(element.route)}>
+          <li key={index} onClick={() => changeRoute(element.route)}>
             {t(element.name)}
-          </div>
+          </li>
         );
       })}
-    </div>
+    </ul>
   );
 }
 

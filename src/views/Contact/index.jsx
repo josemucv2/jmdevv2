@@ -74,7 +74,7 @@ function Contact() {
         </div>
       )}
       {!loader && (
-        <div className="h-full flex justify-between p-10">
+        <section className="h-full flex justify-between p-10">
           <div className="lg:w-1/2 w-full space-y-5 flex flex-col justify-center p-10">
             <Input
               label={t("nameInput")}
@@ -115,7 +115,7 @@ function Contact() {
           <div className="w-1/2 m-auto hidden lg:inline">
             <Presentation contact />
           </div>
-        </div>
+        </section>
       )}
     </>
   );
