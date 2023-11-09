@@ -18,24 +18,24 @@ function App() {
 
   return (
     <BrowserRouter>
-      <NavBar viewMenu={viewMenu} changeViewMenu={changeViewMenu} />
-      {viewMenu && (
-        <header>
-          <nav className="menu-mobile-container">
+      <div className="body_template">
+        <ParticlesComponent />
+        <ToastContainer />
+        <NavBar viewMenu={viewMenu} changeViewMenu={changeViewMenu} />
+        {viewMenu && (
+          <div className="menu-mobile-container">
             <NavBarMobile setViewMenu={changeViewMenu} />
-          </nav>
-        </header>
-      )}
+          </div>
+        )}
 
-      {!viewMenu && (
-        <main className="router-view-container">
-          <RouteView />
-        </main>
-      )}
+        {!viewMenu && (
+          <div className="router-view-container">
+            <RouteView />
+          </div>
+        )}
 
-      <Footer />
-      <ParticlesComponent />
-      <ToastContainer />
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

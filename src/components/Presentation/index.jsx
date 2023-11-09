@@ -18,8 +18,9 @@ function Presentation({ contact }) {
     <div className="flex flex-col justify-center items-center space-y-10 ">
       <img
         src={PhotoJose}
-        className="z-20 rounded-full	"
+        className="z-20 rounded-full "
         width={"250px"}
+        height={"250px"}
         alt="Jose Martinez"
       />
 
@@ -31,13 +32,21 @@ function Presentation({ contact }) {
 
         <div className="flex space-x-3 items-center">
           <Link to={RRSS_INSTAGRAM}>
-            <img src={ig} alt="instagram" className="mt-1 cursor-pointer" />
+            <img
+              src={ig}
+              alt="instagram"
+              className="mt-1 cursor-pointer"
+              width={"30px"}
+              height={"30px"}
+            />
           </Link>
           <Link to={RRSS_LINKEDIN}>
             <img
               src={linkedin}
               alt="linkedin"
-              className="mt-1 cursor-pointer"
+              className="cursor-pointer"
+              width={"30px"}
+              height={"30px"}
             />
           </Link>
         </div>

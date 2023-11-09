@@ -1,0 +1,16 @@
+{
+    "rewrites": [
+        {
+            "source": "/src/assets/img/:path*",
+            "headers": {
+                "Cache-Control": "public, max-age=604800"
+            }
+        },
+        {
+            "source": "/src/assets/icons/:path*",
+            "headers": {
+                "Cache-Control": "public, max-age=604800"
+            }
+        }
+    ]
+}
