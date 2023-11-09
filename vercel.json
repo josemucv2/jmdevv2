@@ -2,15 +2,31 @@
     "rewrites": [
         {
             "source": "/src/assets/img/:path*",
-            "headers": {
-                "Cache-Control": "public, max-age=604800"
-            }
+            "destination": "/src/assets/img/:path*"
         },
         {
             "source": "/src/assets/icons/:path*",
-            "headers": {
-                "Cache-Control": "public, max-age=604800"
-            }
+            "destination": "/src/assets/icons/:path*"
+        }
+    ],
+    "headers": [
+        {
+            "source": "/src/assets/img/:path*",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=604800"
+                }
+            ]
+        },
+        {
+            "source": "/src/assets/icons/:path*",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=604800"
+                }
+            ]
         }
     ]
 }
